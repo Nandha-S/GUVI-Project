@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!--Jquery datatable js link-->
+  <script type="text/javascript" src="https://cdn.datatables.net/1.12.0/js/jquery.dataTables.min.js"></script>
+  <!--Jquery Datatable css link-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.css"> 
+  <!--Bootstrap CSS link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!--Bootarap JS link-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+   
+    
+    <title>user</title>
+</head>
+
+<body>
+    <div class="modal my-5" id="showmodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-content-end">
+                    <p class="fw-bolder text-dark my-n2" role="button" onclick="hideModal()">x</p>
+                </div>
+                <div class="modal-body">
+                    <p id="status" class="text-dark text-center"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <h3 class="my-3">LogIn</h3>
+        <form method="post">
+            
+            <div class="mb-3">
+                <label>Email</label>
+                <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" autocomplete="off">
+            </div>
+           
+            <div class="mb-3">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Enter your password" name="password"id="password" autocomplete="off">
+            </div>
+            <button type="button" class="btn btn-primary" name="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    
+    <script src="js/login.js"></script>
+</body>
+
+</html>
